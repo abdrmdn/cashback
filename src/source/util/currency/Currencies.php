@@ -19,6 +19,10 @@ class Currencies
 
     public static function getCurrencyFromDomain($domain)
     {
-        return (isset(Self::$domainsCurrencies[$domain])) ? Currencies::$domainsCurrencies[$domain] : null;
+        if (!isset(Self::$domainsCurrencies[$domain])) {
+            throw new \Exception('domain doesnt exist');
+        }
+
+        return Currencies::$domainsCurrencies[$domain];
     }
 }

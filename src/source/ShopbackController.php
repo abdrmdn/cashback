@@ -25,7 +25,11 @@ class ShopbackController
      */
     public function run()
     {
-        $this->command->exec();
+        try{
+            $this->command->exec();
+        } catch (\Exception $e){
+            echo $e->getMessage();
+        }
     }
 
     /**
