@@ -20,7 +20,7 @@ class Currencies
     public static function getCurrencyFromDomain($domain)
     {
         if (!isset(Self::$domainsCurrencies[$domain])) {
-            throw new \Exception('domain doesnt exist');
+            throwError('domain doesnt exist');
         }
 
         return Currencies::$domainsCurrencies[$domain];
