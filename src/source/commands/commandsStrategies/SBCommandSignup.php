@@ -27,7 +27,7 @@ class SBCommandSignup extends SBCommands implements SBCommandsInterface
         $currency = Currencies::getCurrencyFromDomain($domain);
         $reward = $this->getSignupReward($domain);
 
-        $this->output($domain . ' => ' . $currency . ' ' . $reward);
+        $this->output('Award bonus: ' . number_format($reward, 2, '.', '') . ' ' . $currency);
     }
 
     private function getSignupReward($domain)

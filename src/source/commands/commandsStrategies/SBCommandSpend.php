@@ -15,7 +15,7 @@ class SBCommandSpend extends SBCommands implements SBCommandsInterface
         arsort($this->parameters);
         if ($this->parameters[0] > 0) {
             $percentage = $this->calculateRewardPercentage($this->parameters);
-            $output = 'Award cashback: ' . $percentage;
+            $output = 'Award cashback: ' . number_format($percentage, 2, '.', '');
         } else {
             $output = "No cashback";
         }
