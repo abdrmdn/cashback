@@ -21,9 +21,11 @@ class SBCommands
 
     /**
      * this function works as a chanel for loggin outputs
+     *
      * @param $string
      */
-    public function output($string){
-        echo $string;
+    public function output($string)
+    {
+        $this->logger->log($string);
     }
 }

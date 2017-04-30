@@ -61,7 +61,8 @@ class SBCommandSpend extends SBCommands implements SBCommandsInterface
                 continue;
             }
         }
-        $HighestSpent = array_shift(array_values($moneySpent));
+        $arrayValues = array_values($moneySpent);
+        $HighestSpent = array_shift($arrayValues);
         if ($fifties) {
             return 0.2 * $HighestSpent;
         }
