@@ -8,7 +8,7 @@ Since im not familiar with the testing environment i added the autoload for the 
 otherwise, i would've used COMPOSER
 
 
-# cashback for SHOPBACK
+# Cashback for SHOPBACK
 
 A CLI PHP Application that will calculate cashback  amounts. The application signature should look like the following:
 
