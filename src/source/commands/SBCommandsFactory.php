@@ -10,10 +10,11 @@ class SBCommandsFactory
 {
     /**
      * @param string $commandName
+     * @param array $parameters
      *
      * @return SBCommandsInterface
      */
-    public static function Create($commandName)
+    public static function Create($commandName, $parameters)
     {
         $commands = [
             'spend' => SBCommandSpend::class,
@@ -34,7 +35,7 @@ class SBCommandsFactory
         if (!empty($commandName) && !isset($commands[$commandName])) {
             return new SBCommandInvalid($logger);
         } else {
-            return new $commands[$commandName]($logger);
+            return new $commands[$commandName]($logger, $parameters);
         }
 
     }

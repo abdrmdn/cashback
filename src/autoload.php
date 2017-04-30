@@ -25,6 +25,9 @@ require_once 'source/commands/commandsStrategies/SBCommandRedeem.php';
 require_once 'source/commands/commandsStrategies/SBCommandSignup.php';
 require_once 'source/commands/commandsStrategies/SBCommandSpend.php';
 
+//util
+require_once 'source/util/Domains.php';
+require_once 'source/util/currency/Currencies.php';
 
 //
 require_once 'source/commands/SBCommandsFactory.php';

@@ -7,9 +7,16 @@ class SBCommands
 {
     private $logger;
 
-    public function __construct($logger)
+    /**
+     * SBCommands constructor.
+     *
+     * @param $logger
+     * @param array $parameters
+     */
+    public function __construct($logger, $parameters = [])
     {
         $this->logger = $logger;
+        $this->parameters = $parameters;
     }
 
     /**

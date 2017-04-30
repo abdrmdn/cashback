@@ -17,7 +17,7 @@ class ShopbackController
     public function __construct($args)
     {
         $this->args = $args;
-        $this->generateCommandInstance();
+        $this->generateCommandInstance(array_slice($args,1, count($args)));
     }
 
     /**
@@ -28,8 +28,11 @@ class ShopbackController
         $this->command->exec();
     }
 
-    private function generateCommandInstance()
+    /**
+     * @param $params
+     */
+    private function generateCommandInstance($params)
     {
-        $this->command = SBCommandsFactory::Create(isset($this->args[0]) ? $this->args[0]: null);
+        $this->command = SBCommandsFactory::Create(isset($this->args[0]) ? $this->args[0]: null, $params);
     }
 }
