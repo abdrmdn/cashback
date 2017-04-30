@@ -2,11 +2,11 @@
 
 use source\ShopbackController as ShopbackApplication;
 
-require_once 'source/ShopbackController.php';
+require_once 'autoload.php';
 
 //load Args
-$args = [];
+$applicationArguments = array_slice($argv,1, count($argv));
 
 //bootstrap application
-$shopbackCommand = new ShopbackApplication($args);
+$shopbackCommand = new ShopbackApplication($applicationArguments);
 $shopbackCommand->run();

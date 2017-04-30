@@ -1,8 +1,10 @@
 <?php
 namespace source;
 
+use source\commands\SBCommandsFactory;
 
-class ShopbackController{
+class ShopbackController
+{
 
     private $args;
     private $command;
@@ -17,15 +19,17 @@ class ShopbackController{
         $this->args = $args;
         $this->generateCommandInstance();
     }
+
     /**
      * Will run the command provided regardless
      */
     public function run()
     {
-//        $this->command->run();
+        $this->command->exec();
     }
 
-    private function generateCommandInstance() {
-        $this->command = null;
+    private function generateCommandInstance()
+    {
+        $this->command = SBCommandsFactory::Create(isset($this->args[0]) ? $this->args[0]: null);
     }
 }
