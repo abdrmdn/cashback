@@ -5,6 +5,7 @@ namespace source;
 class ShopbackController{
 
     private $args;
+    private $command;
 
     /**
      * ShopbackController constructor.
@@ -21,10 +22,10 @@ class ShopbackController{
      */
     public function run()
     {
-
+//        $this->command->run();
     }
 
     private function generateCommandInstance() {
-        
+        $this->command = null;
     }
 }
