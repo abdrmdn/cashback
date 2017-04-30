@@ -1,9 +1,9 @@
 # cashback
+
 A CLI PHP Application that will calculate cashback  amounts. The application signature should look like the following:
+
 ``
 $ php shopback-calculator.php <action> <arg1> [<arg2>...]
-
-$ node shopback-calculator.js <action> <arg1> [<arg2>...]
 ``
 
 The application must be able to accept these actions as param and perform the corresponding tasks:
