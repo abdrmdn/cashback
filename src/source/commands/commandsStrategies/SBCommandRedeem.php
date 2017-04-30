@@ -8,12 +8,12 @@ use source\util\Domains;
 class SBCommandRedeem extends SBCommands implements SBCommandsInterface
 {
     private $domainsURIs = [
-        Domains::SINGAPORE => '=> https://' . Domains::SINGAPORE,
-        Domains::MALAYSIA => '=> https://' . Domains::MALAYSIA,
-        Domains::INDONESIA => '=> https://' . Domains::INDONESIA,
-        Domains::TAIWAN => '=> https://' . Domains::TAIWAN,
-        Domains::THAILAND => '=> https://' . Domains::THAILAND,
-        Domains::INTERNATIONAL => '=> https://' . Domains::INTERNATIONAL,
+        Domains::SINGAPORE => 'https://' . Domains::SINGAPORE,
+        Domains::MALAYSIA => 'https://' . Domains::MALAYSIA,
+        Domains::INDONESIA => 'https://' . Domains::INDONESIA,
+        Domains::TAIWAN => 'https://' . Domains::TAIWAN,
+        Domains::THAILAND => 'https://' . Domains::THAILAND,
+        Domains::INTERNATIONAL => 'https://' . Domains::INTERNATIONAL,
     ];
 
     /**
