@@ -20,20 +20,20 @@ Award corresponding bonus amount with currency for each of:
 ## 2. spend <amount>[<amount>...]
 
 Return cashback awarded rounded to 2 decimal places. Either:
-award 20% of the highest amount if every single amount is >= 50;
-award 15% of the highest amount if every single amount are >= 20;
-award 10% of the highest if all amounts are >= 10;
-or award 5% of the highest as cashback
+- award 20% of the highest amount if every single amount is >= 50;
+- award 15% of the highest amount if every single amount are >= 20;
+- award 10% of the highest if all amounts are >= 10;
+- or award 5% of the highest as cashback
 
 ## 3. redeem <domain>
 
 Direct user to visit corresponding websites
-www.shopback.sg => https://www.shopback.sg
-www.shopback.my => https://www.shopback.my
-www.shopback.co.id => https://www.shopback.co.id
-www.shopback.com.tw => https://www.shopback.com.tw
-www.myshopback.co.th => https://www.myshopback.co.th
-www.shopback.com => https://www.shopback.com
+- www.shopback.sg => https://www.shopback.sg
+- www.shopback.my => https://www.shopback.my
+- www.shopback.co.id => https://www.shopback.co.id
+- www.shopback.com.tw => https://www.shopback.com.tw
+- www.myshopback.co.th => https://www.myshopback.co.th
+- www.shopback.com => https://www.shopback.com
 
 The application needs to have an extensible interface where adding a new action is just a matter of adding
 more files and should not require any modifications to the existing code base.
