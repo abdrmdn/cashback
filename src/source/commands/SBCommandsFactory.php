@@ -22,6 +22,7 @@ class SBCommandsFactory
             'signup' => SBCommandSignup::class,
 
         ];
+        //Dependecny injection
         $logger = (
         new class
         {
