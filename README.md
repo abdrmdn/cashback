@@ -1,4 +1,4 @@
-## Additional Commands
+## How to add new Commands
 - Add a new command under commandsStrategies with its implementation
 - Make sure its listed in the list of commands in the Factory (avoided files/strategies discovery for many reasons)
 - Add the new strategy in the autoload
