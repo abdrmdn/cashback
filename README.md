@@ -1,4 +1,14 @@
-# cashback
+## Additional Commands
+- Add a new command under commandsStrategies with its implementation
+- Make sure its listed in the list of commands in the Factory (avoided files/strategies discovery for many reasons)
+- Add the new strategy in the autoload
+
+## FYI
+Since im not familiar with the testing environment i added the autoload for the files in an autoload.php file.
+otherwise, i would've used COMPOSER
+
+
+# cashback for SHOPBACK
 
 A CLI PHP Application that will calculate cashback  amounts. The application signature should look like the following:
 
